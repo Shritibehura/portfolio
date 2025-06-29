@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Shriti</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <!-- <div class="contenedor-img">
+                <img src="img/trere.png" alt="">
+            </div> -->
+            <h1>Shriti Behura</h1>
+            <h2>Data Analyst</h2>
+            <div class="redes">
+                <a href="https://github.com/Shritibehura" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shritiBehura" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+<p>
+  Hi there, I am <span style="font-weight: bold;">Shriti Behura</span>. 
+  I am an aspiring Data Analyst with hands-on experience in Excel, Power BI, Python, and SQL. 
+  My projects focus on transforming complex data into clear, actionable insights through dashboards and visualizations. 
+  With a background in Life Sciences and a passion for analytics, I bring a unique problem-solving approach. 
+  I’m eager to contribute to data-driven teams and continuously grow in the field of analytics.
+</p>
+ 
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Phone</strong>
+                            +91-8882022087
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            shritibehura@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.github.com/Shritibehura
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            Delhi,India
+                        </li>
+                        <!-- <li>
+                            <strong>Position</strong>
+                            <span>Fresher</span>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <!-- <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-chess-knight"></i>
+                            <span>CHESS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>SOCCER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SPORTS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTORCYCLE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>FILMS</span>
+                        </div>
+                        
+                    </div>
+                </div> -->
+            </div> 
+                <!-- <a href="https://drive.google.com/file/d/1aG31JVkmJnoMHwjua4Mi2_0DXGjruWMo/view?usp=sharing" download target="_blank">
+                    <button>
+                        Download CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </a> -->
+        </div>
+    </section>
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" onclick="openModal('proyecto1')">
+                    <img src="img/twitteranalysis.png" alt="">
+                    <div class="overlay">
+                        <h3>Motorola Sales Dashboard</h3>
+                        <p>Project</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="openModal('proyecto2')">
+                    <img src="img/Hospital emergency room dashboard.png" alt="">
+                    <div class="overlay">
+                        <h3>Hospital Emergency Room Dashboard</h3>
+                        <p>Project</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="openModal('proyecto3')">
+                    <img src="img/tdgh.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Uber NYC Ride Data Analysis</h3>
+                        <p>Project</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="openModal('proyecto5')">
+                    <img src="img/Dispercion1.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Hotel Booking Demand Analysis</h3>
+                        <p>Project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div id="modal-img" class="modal-image"></div>
+                </div>
+                <div class="modal-text" id="modal-text">
+                    <!-- El contenido se actualizará dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
+
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span translate="no">Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span translate="no">Tableau</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mysql & Postgresql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span translate="no">Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Analysis</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management (Scrum)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="contactForm" action="https://formspree.io/f/myyrzyoq" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="tel" name="phone" placeholder="Phone number">
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <input type="text" name="topic" placeholder="Subject" required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <button>
+                            Send Message<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>    
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/OIP (2).jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: shritibehura@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/Shritibehura" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shritiBehura" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
