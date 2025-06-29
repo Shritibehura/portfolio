@@ -17,7 +17,7 @@ This is my personal portfolio website, showcasing my projects, skills, and backg
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap / Tailwind (if used)
+- Bootstrap / Tailwind 
 - Font Awesome
 
 
