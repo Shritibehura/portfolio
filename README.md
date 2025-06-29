@@ -27,4 +27,5 @@ To run this project locally:
 
 1. **Clone the repo**
    ```bash
-https://github.com/Shritibehura/portfolio.git
+   git clone https://github.com/Shritibehura/portfolio.git
+   
